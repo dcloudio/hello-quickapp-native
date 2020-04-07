@@ -54,7 +54,12 @@
         }
     },
     /* 快应用特有相关 */
-    "quickapp" : {},
+    "quickapp" : {
+      "config": {
+        "package": "com.example.demo",
+        "designWidth": 360
+      }
+    },
     /* 小程序特有相关 */
     "mp-weixin" : {
         "appid" : "",
