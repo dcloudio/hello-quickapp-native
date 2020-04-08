@@ -2,7 +2,7 @@
     <view class="content">
         <view class="uni-padding">
             <button class="button" type="primary">页面主操作 Normal</button>
-            <button class="button" type="primary" :loading="loading">页面主操作 Loading</button>
+            <!-- <button class="button" type="primary" :loading="loading">页面主操作 Loading</button> -->
             <button class="button" type="primary" disabled="true">页面主操作 Disabled</button>
 
             <button class="button" type="default">页面次要操作 Normal</button>
