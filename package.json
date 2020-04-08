@@ -40,16 +40,15 @@
     "@dcloudio/uni-quickapp-light": "^2.0.0-alpha-26920200407003",
     "@dcloudio/uni-quickapp-vue": "^2.0.0-alpha-26920200407003",
     "@dcloudio/uni-stat": "^2.0.0-alpha-26920200407003",
-    "core-js": "^2.6.5",
+    "core-js": "^3.6.4",
     "flyio": "^0.6.2",
     "regenerator-runtime": "^0.12.1",
-    "vue": "^2.6.10",
+    "vue": "^2.6.11",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
     "@dcloudio/uni-cli-shared": "^2.0.0-alpha-26920200407003",
     "@dcloudio/uni-migration": "^2.0.0-alpha-26920200407003",
-    "@dcloudio/uni-quickapp": "^2.0.0-alpha-261020200403001",
     "@dcloudio/uni-template-compiler": "^2.0.0-alpha-26920200407003",
     "@dcloudio/vue-cli-plugin-hbuilderx": "^2.0.0-alpha-26920200407003",
     "@dcloudio/vue-cli-plugin-uni": "^2.0.0-alpha-26920200407003",
@@ -58,14 +57,14 @@
     "@dcloudio/webpack-uni-pages-loader": "^2.0.0-alpha-26920200407003",
     "@types/html5plus": "*",
     "@types/uni-app": "*",
-    "@vue/cli-plugin-babel": "^3.12.0",
-    "@vue/cli-service": "^3.12.0",
+    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
     "babel-plugin-import": "^1.11.0",
     "cross-env": "^7.0.2",
     "mini-types": "*",
     "miniprogram-api-typings": "^2.8.0-2",
     "postcss-comment": "^2.0.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [
     "Android >= 4",
