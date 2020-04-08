@@ -1,6 +1,6 @@
 <template>
   <view class="content">
-    <button @click="buttonClick">Button</button>
+    <button @click="handleButton">Button</button>
   </view>
 </template>
 
@@ -14,7 +14,7 @@
     onLoad() {
     },
     methods: {
-      buttonClick() {
+      handleButton() {
         uni.navigateTo({
             url: '/pages/button/button'
         });
