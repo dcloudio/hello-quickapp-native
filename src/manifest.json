@@ -56,7 +56,8 @@
     /* 快应用vue特有相关 */
     "quickapp-vue": {
         "icon": "static/logo.png",
-        "package": "com.example.demo"
+        "package": "com.example.demo",
+        "features": [{ "name": "system.clipboard" }]
     },
     /* 小程序特有相关 */
     "mp-weixin": {

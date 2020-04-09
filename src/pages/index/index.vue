@@ -1,6 +1,8 @@
 <template>
   <view class="content">
-    <button @click="handleButton">Button</button>
+    <button class="btn" @click="handleButton">Button</button>
+    <button class="btn" @click="handleGetClipboard">Get Clipboard</button>
+    <button class="btn" @click="handleSetClipboard">Set Clipboard</button>
   </view>
 </template>
 
@@ -11,13 +13,33 @@
         title: 'Hello'
       }
     },
-    onLoad() {
-    },
+    onLoad() {},
     methods: {
       handleButton() {
         uni.navigateTo({
-            url: '/pages/button/button'
+          url: '/pages/button/button'
         });
+      },
+      handleGetClipboard() {
+        uni.getClipboardData({
+          success: (res) => {
+            console.log("success", res);
+          },
+          complete: (res) => {
+            console.log("complete", res);
+          }
+        })
+      },
+      handleSetClipboard() {
+        uni.setClipboardData({
+          data: "test-clipboard",
+          success: (res) => {
+            console.log("success", res);
+          },
+          complete: (res) => {
+            console.log("complete", res);
+          }
+        })
       }
     }
   }
@@ -30,4 +52,7 @@
     padding: 15px;
   }
 
+  .btn {
+    margin-bottom: 15px;
+  }
 </style>
