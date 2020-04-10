@@ -1,7 +1,6 @@
 <template>
   <view class="content">
-    <button class="btn" @click="handleButton">Button</button>
-    <button class="btn" @click="handleClipboard">Clipboard</button>
+    <button class="btn" v-for="item in pages" @click="handleButton(item)">{{item.name}}</button>
   </view>
 </template>
 
@@ -9,21 +8,29 @@
   export default {
     data() {
       return {
-        title: 'Hello'
+        title: 'Hello',
+        pages: [{
+            name: "button",
+            path: "/pages/button/button"
+          },
+          {
+            name: "clipboard",
+            path: "/pages/clipboard/clipboard"
+          },
+          {
+            name: "invoke-platform-api",
+            path: "/pages/invoke-platform-api/invoke-platform-api"
+          }
+        ]
       }
     },
     onLoad() {},
     methods: {
-      handleButton() {
+      handleButton(e) {
         uni.navigateTo({
-          url: '/pages/button/button'
+          url: e.path
         });
-      },
-      handleClipboard() {
-        uni.navigateTo({
-          url: '/pages/clipboard/clipboard'
-        });
-      },
+      }
     }
   }
 </script>

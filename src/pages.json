@@ -17,6 +17,12 @@
       "style": {
         "navigationBarTitleText": "Clipboard"
       }
+    },
+    {
+      "path": "pages/invoke-platform-api/invoke-platform-api",
+      "style": {
+        "navigationBarTitleText": "invoke-platform-api"
+      }
     }
   ],
   "globalStyle": {

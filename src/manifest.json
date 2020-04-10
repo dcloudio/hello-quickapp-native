@@ -57,7 +57,7 @@
     "quickapp-vue": {
         "icon": "static/logo.png",
         "package": "com.example.demo",
-        "features": [{ "name": "system.clipboard" }]
+        "features": [{ "name": "system.clipboard" }, { "name": "system.barcode" }]
     },
     /* 小程序特有相关 */
     "mp-weixin": {
