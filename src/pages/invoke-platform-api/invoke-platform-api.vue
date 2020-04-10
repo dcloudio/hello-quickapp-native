@@ -1,5 +1,5 @@
 <template>
-  <view>
+  <view class="page-padding-lr">
     <button @click="handleScan">Scan</button>
     <view>
       <input :value="scanResult" />

@@ -1,6 +1,9 @@
 <template>
   <view class="content">
-    <button class="btn" v-for="item in pages" @click="handleButton(item)">{{item.name}}</button>
+    <text class="group-text">组件</text>
+    <button class="btn" v-for="item in components" @click="handleButton(item)">{{item.name}}</button>
+    <text class="group-text">API</text>
+    <button class="btn" v-for="item in apis" @click="handleButton(item)">{{item.name}}</button>
   </view>
 </template>
 
@@ -9,13 +12,16 @@
     data() {
       return {
         title: 'Hello',
-        pages: [{
-            name: "button",
-            path: "/pages/button/button"
-          },
-          {
+        components: [{
+          name: "button",
+          path: "/pages/component/button/button"
+        }],
+        apis: [{
+            name: "request",
+            path: "/pages/api/request/request"
+          }, {
             name: "clipboard",
-            path: "/pages/clipboard/clipboard"
+            path: "/pages/api/clipboard/clipboard"
           },
           {
             name: "invoke-platform-api",
@@ -40,6 +46,10 @@
     display: flex;
     flex-direction: column;
     padding: 15px;
+  }
+
+  .group-text {
+    margin: 10px 0;
   }
 
   .btn {

@@ -7,15 +7,21 @@
       }
     },
     {
-      "path": "pages/button/button",
+      "path": "pages/component/button/button",
       "style": {
         "navigationBarTitleText": "button"
       }
     },
     {
-      "path": "pages/clipboard/clipboard",
+      "path": "pages/api/clipboard/clipboard",
       "style": {
         "navigationBarTitleText": "Clipboard"
+      }
+    },
+    {
+      "path": "pages/api/request/request",
+      "style": {
+        "navigationBarTitleText": "request"
       }
     },
     {

@@ -1,5 +1,5 @@
 <template>
-  <view class="content">
+  <view class="content page-padding-lr">
     <view class="uni-list">
       <input class="uni-input" type="text" placeholder="请输入剪贴板内容" :value="data" @change="dataChange"></input>
     </view>
@@ -67,7 +67,6 @@
   .content {
     display: flex;
     flex-direction: column;
-    padding: 15px;
   }
 
   .uni-list {
