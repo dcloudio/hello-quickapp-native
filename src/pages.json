@@ -25,9 +25,21 @@
       }
     },
     {
-      "path": "pages/invoke-platform-api/invoke-platform-api",
+      "path": "pages/uni-cloud/uni-cloud",
       "style": {
-        "navigationBarTitleText": "invoke-platform-api"
+        "navigationBarTitleText": "uniCloud"
+      }
+    },
+    {
+      "path": "pages/quickapp-component/image/image",
+      "style": {
+        "navigationBarTitleText": "image"
+      }
+    },
+    {
+      "path": "pages/quickapp-api/scan-code/scan-code",
+      "style": {
+        "navigationBarTitleText": "scan-code"
       }
     }
   ],

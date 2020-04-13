@@ -1,9 +1,14 @@
 <template>
   <view class="content">
-    <text class="group-text">组件</text>
-    <button class="btn" v-for="item in components" @click="handleButton(item)">{{item.name}}</button>
-    <text class="group-text">API</text>
-    <button class="btn" v-for="item in apis" @click="handleButton(item)">{{item.name}}</button>
+    <text class="group-text">uni 组件</text>
+    <button class="btn" v-for="item in components" @click="handleButton(item.path)">{{item.name}}</button>
+    <text class="group-text">uni API</text>
+    <button class="btn" v-for="item in apis" @click="handleButton(item.path)">{{item.name}}</button>
+    <view class="split"></view>
+    <text class="group-text">quickapp 组件</text>
+    <button class="btn" @click="handleButton('/pages/quickapp-component/image/image')">image</button>
+    <text class="group-text">quickapp API</text>
+    <button class="btn" @click="handleButton('/pages/quickapp-api/scan-code/scan-code')">Scan Code</button>
   </view>
 </template>
 
@@ -19,22 +24,22 @@
         apis: [{
             name: "request",
             path: "/pages/api/request/request"
-          }, {
+          },
+          {
             name: "clipboard",
             path: "/pages/api/clipboard/clipboard"
           },
           {
-            name: "invoke-platform-api",
-            path: "/pages/invoke-platform-api/invoke-platform-api"
+            name: "uniCloud",
+            path: "/pages/uni-cloud/uni-cloud"
           }
         ]
       }
     },
-    onLoad() {},
     methods: {
       handleButton(e) {
         uni.navigateTo({
-          url: e.path
+          url: e
         });
       }
     }
@@ -54,5 +59,9 @@
 
   .btn {
     margin-bottom: 15px;
+  }
+
+  .split {
+    height: 50px;
   }
 </style>
