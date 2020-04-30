@@ -53,8 +53,8 @@
             "sdkConfigs" : {}
         }
     },
-    /* 快应用vue特有相关 */
-    "quickapp-vue" : {
+    /* 快应用-native特有相关 */
+    "quickapp-native" : {
         "icon" : "static/logo.png",
         "package" : "com.example.demo",
         "features" : [

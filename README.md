@@ -1,4 +1,4 @@
-# test-quickapp-vue
+# test-quickapp-native
 快应用测试工程
 
 1. 安装 [快应用调试器](https://statres.quickapp.cn/quickapp/quickapp/201806/file/quickapp_debugger.apk)
@@ -9,11 +9,11 @@
 
 4. 编译快应用 `rpk`
 ```
-npm run dev:quickapp-vue
+npm run dev:quickapp-native
 ```
 5. 开启debug在线更新服务
 ```
-npm run serve:quickapp-vue
+npm run serve:quickapp-native
 ```
 
 6. 打开快应用调试器，扫码安装或右上角设置服务器地址(注意带上`http://`，关闭USB调试可看到扫码)
